@@ -1,0 +1,134 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+img {
+    width: 100px;
+}
+
+#hero{
+    background: url("images/regina-xs.jpg");
+    background-size: cover;
+    height: 343px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#hero-title {
+    padding: 5px 12px;
+    background-color: #1D3557;
+    border-radius: 10px;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#hero-subtitle {
+    padding: 5px 30px;
+    width: 412px;
+    margin: 0 auto;
+    background: #457B9D;
+    font-size: 19px;
+    border-radius: 10px;
+}
+
+.rounded-img{
+    border-radius: 50%;
+}
+
+.activities{
+    padding-top: 60px;
+    display:flex;
+    justify-content: space-around;
+    background: #F1FAEE;
+}
+
+.activity-headline{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #1D3557;
+    width: 185px;
+}
+
+.activity-para{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #1D3557;
+    width: 200px;
+}
+
+#guide-title{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #1D3557;
+}
+
+#guide-para{
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #1D3557;
+}
+
+#guide-name{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #1D3557;
+}
+
+#guide{
+    background: #A8DADC;
+    box-shadow: 0px 6px 0px #1D3557;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    margin: 50px auto;
+    padding: 23px 13px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.guide-avatar{
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+}
+
