@@ -16,55 +16,108 @@
       color: #1D3557;
     }
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    @media (max-width: 768px) {
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      .hero-title {
+        margin: 200px 0 0 0;
+        padding: 5px 12px;
+        background-color: #1D3557;
+        border-radius: 10px;
+        font-size: 32px;
+        text-align: center;
+        color: white;
+      }
+
+      .hero-subtitle {
+        margin: 10px 0 0 0;
+        padding: 5px 30px;
+        background: #457B9D;
+        font-size: 19px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      .hero-subtitle-2 {
+        margin: 40px 0 0 0;
+        padding: 5px 30px;
+        background: #457B9D;
+        font-size: 19px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      .deployed {
+        margin: 10px 0 30px 0;
+        border: 2px solid gray;
+        border-radius: 10px;
+        padding: 0 30px;
+        background-color: #457B9D;
+        font-size: 20px;
+        box-shadow: 0px 6px 0px #1D3557;
+        color: #1D3557;
+      }
     }
 
-    .hero-title {
-      margin: 200px 0 0 0;
-      padding: 5px 12px;
-      width: 412px;
-      background-color: #1D3557;
-      border-radius: 10px;
-      font-size: 32px;
-      text-align: center;
-      color: white;
-    }
+    @media (min-width: 769px) {
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
 
-    .hero-subtitle {
-      margin: 10px 0 0 0;
-      padding: 5px 30px;
-      width: 412px;
-      background: #457B9D;
-      font-size: 19px;
-      border-radius: 10px;
-      text-align: center;
-      color: white;
-    }
+      .hero-title {
+        margin: 200px 0 0 0;
+        padding: 5px 12px;
+        width: 412px;
+        background-color: #1D3557;
+        border-radius: 10px;
+        font-size: 32px;
+        text-align: center;
+        color: white;
+      }
 
-    .hero-subtitle-2 {
-      margin: 40px 0 0 0;
-      padding: 5px 30px;
-      width: 500px;
-      background: #457B9D;
-      font-size: 19px;
-      border-radius: 10px;
-      text-align: center;
-      color: white;
-    }
+      .hero-subtitle {
+        margin: 10px 0 0 0;
+        padding: 5px 30px;
+        width: 412px;
+        background: #457B9D;
+        font-size: 19px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+      }
 
-    .deployed {
-      margin: 10px 0 0 0;
-      border: 2px solid gray;
-      border-radius: 10px;
-      padding: 0 30px;
-      background-color: #457B9D;
-      font-size: 20px;
-      width: 500px;
-      box-shadow: 0px 6px 0px #1D3557;
-      color: #1D3557;
+      .hero-subtitle-2 {
+        margin: 40px 0 0 0;
+        padding: 5px 30px;
+        width: 500px;
+        background: #457B9D;
+        font-size: 19px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      .deployed {
+        margin: 10px 0 0 0;
+        border: 2px solid gray;
+        border-radius: 10px;
+        padding: 0 30px;
+        background-color: #457B9D;
+        font-size: 20px;
+        width: 500px;
+        box-shadow: 0px 6px 0px #1D3557;
+        color: #1D3557;
+      }
     }
 
     .dl>dt {
@@ -80,16 +133,16 @@
 
 <body>
   <div class="container">
-    <!-- HERO SECTION -->
     <h1 class="hero-title">Must XP Studio</h1>
     <h2 class="hero-subtitle">Web and Video Game Studio</h2>
-    <h2 class="hero-subtitle-2">We also provide full-stack web app development consulting and development services.</h2>
+    <h2 class="hero-subtitle-2">We also provide full-stack web app development <br> and consulting and development services.</h2>
     <div class="deployed">
-      <h4>Deployed projects:</h4>
+      <h4>Deployed Full-Stack Web Apps:</h4>
       <dl class="dl">
-        <dt><a target="_blank" href="hometown/index.html">Hometown page</a></dt>
-        <dd>- Uses Flexbox for positioning</dd>
-        <dd>- Responsive</dd>
+        <dt><a target="_blank" href="https://moodit-52bae.web.app/"><span
+              style="font-family: Snell Roundhand, cursive">Moodit</span></a></dt>
+        <dd>- A full-fledged React and Firebase Web App</dd>
+        <dd>- Upload images, like posts, and sort posts</dd>
         <dt><a target="_blank" href="https://superchat-9aca7.web.app/">Chat app</a></dt>
         <dd>- React</dd>
         <dd>- React Router</dd>
@@ -99,9 +152,6 @@
         <dd>- Firestore database</dd>
         <dd>- Firebase deploy and hosting</dd>
         <dd>- Bootstrap and Reactstrap</dd>
-        <dt><a target="_blank" href="https://moodit-52bae.web.app/"><span style="font-family: Snell Roundhand, cursive">Moodit</span></a></dt>
-        <dd>- A full-fledged React and Firebase Web App</dd>
-        <dd>- Upload images, like posts, and sort posts</dd>
       </dl>
     </div>
   </div>
